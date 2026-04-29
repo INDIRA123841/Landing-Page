@@ -1,0 +1,265 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    font-family: "Poppins", sans-serif;
+    color: #3f3f3f;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+p{
+    font-weight: 600;
+}
+button:hover{
+    transform: scale(1.03);
+    transition: 0.4s;
+    background-color: rgb(3, 148, 3);
+}
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 9rem;
+    height: 55px;
+    align-items: center;
+    
+}
+.navBar>h1{
+    font-size: 2rem;
+}
+.navLinks{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+
+}
+.navLinks>a{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #3f3f3f;
+}
+.navLinks>a:hover{
+   color: rgb(3, 3, 134);
+}
+.registerBtn{
+    padding: 15px 25px;
+    border: none;
+    background-color: rgb(2, 107, 2);
+    color: #fff;
+    font-size: 15px;
+    border-radius:4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.menuBar{
+    display: none;
+    font-size:3vw;
+    cursor: pointer;
+}
+
+
+header{
+    display: flex;
+    padding:3rem 5rem;
+    gap: 30px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(241, 238, 238);
+    height: 80vh;
+   
+}
+
+.heading>h1{
+    font-size: 3.5rem;
+}
+.heading>h1>span{
+    color: rgb(2, 104, 2);
+}
+.heading p{
+    color: #3f3f3f;
+    font-size: 0.7rem;
+    margin: 10px 0 20px;
+}
+.register{
+    padding: 15px 25px;
+    border: none;
+    background-color: rgb(2, 107, 2);
+    color: #fff;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.section-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 5rem;
+    text-align: center;
+}
+
+.section-1>p{
+    font-size: 0.7rem;
+}
+.section-1 img{
+    width: 80%;
+    margin: 30px 0 60px;
+}
+.section-1 h2{
+    font-size: 1.7rem;
+    
+}
+.bottom{
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    width: 100%;
+    margin-top: 50px;
+    padding:30px 0;
+}
+.topic{
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+.sec{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px 30px;
+    box-shadow: 0 0 2px #585757;
+    border-radius: 10px;
+}
+.sec > i{
+    font-size: 22px;
+}
+.para{
+    font-weight: 500;
+    font-size: 0.9rem;
+    text-align: center;
+}
+.section-2{
+    display: flex;
+    justify-content: center;
+    padding:2rem 10rem;
+    align-items: center;
+    gap: 50px;
+}
+.section-2 img{
+    width: 400px;
+}
+.first{
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.second{
+    font-weight: 500;
+    font-size:0.9rem ;
+}
+.section-2 button{
+    padding: 15px 25px;
+    border: none;
+    background-color: rgb(2, 107, 2);
+    color: #fff;
+    border-radius: 8px;
+    font-weight: bold;
+    margin-top: 30px; 
+    cursor: pointer;
+}
+@media (max-width:1200px){
+    h1{
+        font-size: 4vw;
+    }
+    h2{
+        font-size: 3vw;
+    }
+    img{
+        width: 30%;
+    }
+    .navBar{
+        padding: 1rem 20px;
+    }
+    .registerBtn{
+        font-size: 1vw;
+        padding: 10px;
+        white-space: nowrap;
+    }
+    .section-2 p{
+        font-size: 2vw;
+    }
+    .section-2 img{
+        width: 30%;
+    }
+}
+@media (max-width:768px){
+    .navLinks{
+        display: none;
+    }
+    .menuBar{
+        display: block;
+    }
+    .navBar{
+        padding:0 40px;
+    }
+    .navBar>h1{
+        font-size: 3vw;
+    }
+    header{
+        flex-direction: column;
+        padding: 3rem 40px;
+    }
+    .heading>h1{
+        font-size: 5vw;
+    }
+    header img{
+        width:50%;
+    }
+    .section-1{
+        padding: 2rem 40px;
+      
+    }
+    .bottom{
+        flex-direction: column;
+        padding: 2rem ;
+    }
+    .section-1>h1{
+        font-size: 5vw;
+    }
+    .section-1>h2{
+        font-size: 4vw;
+        
+    }
+    .section-1 img{
+        width: 100%;
+    }
+    .section-2{
+        flex-direction: column;
+    }
+    .section-2 img{
+        width: 60%;
+    }
+    
+}
+@media (max-width:576px){
+    
+    .topic{
+        font-size: 4vw;
+    }
+    .para{
+        font-size: 2.5vw;
+    }
+    .section-2{
+        padding: 2rem 20px;
+    }
+    .first{
+        font-size: 3vw;
+    }
+    .second{
+        font-size: 2vw;
+    }
+}
